@@ -1,0 +1,17 @@
+{
+  "name": "project-cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arthur Adamcy de Souza",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "project-cypress": "file:"
+  },
+  "devDependencies": {
+    "cypress": "^14.3.0"
+  }
+}
