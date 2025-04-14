@@ -2,6 +2,7 @@ import userData from "../fixtures/userData.json"
 import LoginPage from "../pages/loginPage"
 import DashboardPage from "../pages/dashboardPage"
 
+
 const loginPage = new LoginPage()
 const dashboardPage = new DashboardPage()
 
