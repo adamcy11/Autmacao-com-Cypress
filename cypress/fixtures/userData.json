@@ -1,15 +1,30 @@
 {
     "userSuccess": {
+
       "username": "Admin",
       "password": "admin123"
     },
+
     "userFail": {
+
       "username": "Adminn",
       "password": "admin1235"
     },
-    "userInfoUpdate": {
+
+    "personalDetails": {
+
       "firstName": "Orange",
       "middleName": "Juice",
       "lastName": "Silva"
+    },
+
+    "employeeDetails":{
+
+    "employeeId": "employeed",
+    "otherId": "IDOther",
+    "driversLicenseDate": "NumberLicenseDrivers",
+    "licenseExpiryDate": "2025-11-11"
     }
+
+
   }
