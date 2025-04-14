@@ -6,5 +6,10 @@
     "userFail": {
       "username": "Adminn",
       "password": "admin1235"
+    },
+    "userInfoUpdate": {
+      "firstName": "Orange",
+      "middleName": "Juice",
+      "lastName": "Silva"
     }
   }
