@@ -7,11 +7,12 @@ class loginPage {
             wrongCredentialAlert: "[role='alert']"
         }
 
-        return selectors
+        return selectors // Returning selectors in Cypress ensures proper command chaining and maintains the asynchronous flow of tests.
+
     }
 
    
-
+// Structure of the tests to be used
     accessLoginPage(){
         cy.visit('/auth/login')
     }
@@ -27,4 +28,4 @@ class loginPage {
     }
 }
 
-export default loginPage
+export default loginPage // allows you to import and reuse login logic in other files.

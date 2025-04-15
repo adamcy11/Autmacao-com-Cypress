@@ -6,6 +6,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
 
-    baseUrl: 'https://opensource-demo.orangehrmlive.com/web/index.php/'
+    baseUrl: 'https://opensource-demo.orangehrmlive.com/web/index.php/' // 'baseUrl' in Cypress config simplifies tests by setting the base URL, avoiding repetition in cy.visit().
+
   },
 });
