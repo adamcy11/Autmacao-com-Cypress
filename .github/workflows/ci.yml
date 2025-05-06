@@ -12,8 +12,7 @@ jobs:
       - name: Cypress Tests
         uses: cypress-io/github-action@v5
         with:
-          start: 'npm run dev'
-          build: 'npm run build'
+          start: 'npm run'
 
       - name: Upload Cypress Artifacts
         uses: actions/upload-artifact@v4
