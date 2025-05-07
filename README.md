@@ -1,57 +1,76 @@
-# My Cypress Automation
+# OrangeHRM – Automação de Testes E2E com Cypress
 
-This project was developed using **Cypress** to automate **end-to-end** tests for two key features: user login and profile information update.Cypress is a powerful testing framework built with **JavaScript** that enables you to write, run, and debug tests directly in the browser environment.
 
-🔧 Installation
+Este projeto automatiza fluxos principais de usuário do sistema **OrangeHRM** utilizando o framework **Cypress**. Ele cobre os cenários de login e atualização de perfil, garantindo a funcionalidade através de testes de ponta a ponta com uma arquitetura de código limpa e organizada.
+
+
+A Integração Contínua (CI) foi configurada com **GitHub Actions**, permitindo a execução automatizada dos testes a cada push no repositório.
+
+![CI](https://github.com/adamcy11/Automating-OrangeHRM-with-Cypress/actions/workflows/ci.yml/badge.svg)
+
+
+---
+🔧 **Instalação**
 
 ```bash
 npm install
 ```
 
 
-💡 NOTE:Make sure you have Node.js installed before proceeding.
+💡  Observação: Certifique-se de que o Node.js esteja instalado antes de iniciar.
 
-# ▶️ Running
+# ▶️ Execução dos Testes
 
-### Launch the Cypress interactive test runner
+### Abrir o Cypress em modo interativo
+
 ```bash
 npx cypress open
 
-
-## Execute tests via terminal in headless mode
+## Executar os testes no terminal em modo headless
 
 npx cypress run
 ```
 
-## 📂 What’s Included
+## 📂 Funcionalidades Incluídas
 
-🔐 Automated login validation
+🔐 Validação de login automatizado
 
-👤 Updating user details through forms
+👤  Atualização de dados de perfil via formulários
 
-🧹 Page Object Model for cleaner code
+🧹 Uso do Page Object Model para organização do código
 
-📄 Test data stored in JSON files under /fixtures
+📄 Dados de teste armazenados em arquivos JSON na pasta /fixtures
 
-🛡 Folder Structure Overview
+🛡 Estrutura de Pastas
 
 ```bash
 cypress/
-├── e2e/                # Test cases
-├── fixtures/           # Test data (JSON)
-├── pages/              # Page Object definitions
-├── support/            # Reusable helpers and config
+├── e2e/                # Casos de teste
+├── fixtures/           # Dados de teste (JSON)
+├── pages/              # Definições dos Page Objects
+├── support/            # Configurações e utilitários 
 ```
 
-## 🛠 Tools Used
+## ✅ Cenários de Testes Cobridos
+
+- [x] Login com credenciais válidas
+- [x] Login com credenciais inválidas
+- [x] Atualização de perfil com dados válidos
+- [x] Validação de campos obrigatórios no perfi
+
+
+## 🛠 Tecnologias Utilizadas
 ```bash
-Cypress (testing)
-
-JavaScript (language)
-
-Node.js (runtime)
+Cypress (framework de testes)
+JavaScript (linguagem)
+Node.js (ambiente de execução)
+GitHub Actions (integração contínua - CI/CD)
 ```
 
-### 📌 Extra Info
+### 📌 Informações Adicionais
 
-This is a learning project aimed at improving automation testing skills with Cypress.
+Este é um projeto de aprendizado com o objetivo de aprimorar habilidades em testes automatizados com Cypress e aplicar práticas profissionais como estrutura modular de testes e pipelines de integração contínua.
+
+## 🤝  Contribuições
+
+Contribuições são bem-vindas! Para mudanças significativas, por favor abra uma issue primeiro para discutir o que você gostaria de modificar.
