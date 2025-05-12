@@ -1,5 +1,5 @@
 class dashboardPage {
-    selectorList(){
+    selectorList() {
         const selectors = {
             dashboardGrid: ".orangehrm-dashboard-grid",
         }
@@ -7,10 +7,9 @@ class dashboardPage {
         return selectors
     }
 
-    checkDashboardPage(){
+    checkDashboardPage() {
         cy.location('pathname').should('equal', '/web/index.php/dashboard/index')
         cy.get(this.selectorList().dashboardGrid).should('be.visible')
-
     }
 
 }

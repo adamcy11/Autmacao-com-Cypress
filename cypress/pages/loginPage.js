@@ -4,14 +4,14 @@ class loginPage {
             usernameField: "[name='username']",
             passwordField: "[name='password']",
             loginButton: "[type='submit']",
-            wrongCredentialAlert: "[role='alert']"
+            wrongCredentialAlert: "[role='alert']",
+            empityFieldAlert: ".oxd-text--span"
         }
 
         return selectors // Returning selectors in Cypress ensures proper command chaining and maintains the asynchronous flow of tests.
 
     }
 
-   
 // Structure of the tests to be used
     accessLoginPage(){
         cy.visit('/auth/login')
@@ -26,6 +26,10 @@ class loginPage {
     checkAccessInvalid(){
         cy.get(this.selectorList().wrongCredentialAlert)
     }
-}
 
+    checkEmptyField(){
+        cy.get(this.selectorList().empityFieldAlert)
+    }
+
+}
 export default loginPage // allows you to import and reuse login logic in other files.

@@ -11,7 +11,8 @@ class myInfoPage {
             genericComboBox: ".oxd-select-text",
             firstItemComboBox: ".oxd-select-dropdown > :nth-child(27)",
             secondItemComboBox: ".oxd-select-dropdown > :nth-child(3)",
-            submitButton: "[type='submit']"
+            submitButton: "[type='submit']",
+            genericInput: ".oxd-radio-input"
         }
 
 
@@ -38,8 +39,7 @@ class myInfoPage {
         cy.get(this.selectorList().firstItemComboBox).click()
         cy.get(this.selectorList().genericComboBox).eq(1).click()
         cy.get(this.selectorList().secondItemComboBox).click()
-
-
+        cy.get(this.selectorList().genericInput).eq(1).click()
     }
 
     saveForm() {

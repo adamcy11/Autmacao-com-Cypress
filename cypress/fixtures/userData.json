@@ -8,7 +8,19 @@
     "userFail": {
 
       "username": "Adminn",
-      "password": "admin1235"
+      "password": "admin123"
+    },
+
+    "passwordFail":{
+
+      "username": "Admin",
+      "password": "admin1234"
+    },
+
+    "userEmpty":{
+
+      "username": " ",
+      "password": " "
     },
 
     "personalDetails": {
